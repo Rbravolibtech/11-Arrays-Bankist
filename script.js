@@ -93,7 +93,6 @@ const createUsernames = function (accs) {
   });
 };
 createUsernames(accounts);
-console.log(accounts);
 
 /////////////////////////////////////////////////
 /////////////////////////////////////////////////
@@ -276,3 +275,17 @@ TEST DATA 2: Julia's data [9, 16, 6, 8, 3], Kate's data [10, 5, 6, 1, 4]
 
 // const withdrawals = movements.filer(mov => mov < 0);
 // console.log(withdrawals);
+
+/*=======THE REDUCE METHOD=======*/
+// acc or accumulator ---> is like a SNOWBALL
+// const balance = movements.reduce(function (acc, cur, i, arr) {
+//   console.log(`Iteration ${i} ${acc}`);
+//   return acc + cur;
+// }, 0);
+// console.log(balance);
+
+// ///for loop 👇🏻
+
+// let balance2 = 0;
+// for (const mov of movements) balance2 += mov;
+// console.log(balance2);
