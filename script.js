@@ -589,3 +589,35 @@ console.log(movements);
 
 movements.sort((a, b) => b - a);
 console.log(movements);
+
+/*======= MORE WAYS OF CREATING AND FILLING ARRAYS =======*/
+
+const x = new Array(7);
+console.log(x);
+
+x.fill(1, 3, 5);
+x.fill(1);
+console.log(x);
+
+arr.fill(23, 3, 6);
+console.log(arr);
+
+//ARRAY.FROM
+
+const y = Array.from({ length: 7 }, () => 1);
+console.log(y);
+
+const z = Array.from({ length: 7 }, (_, i) => i + 1);
+console.log(z);
+
+const movementsUI = Array.from(document.querySelectorAll('.movements_value'));
+console.log(movementsUI);
+
+labelBalance.addEventListener('click', function () {
+  const movementsUI = Array.from(document.querySelectorAll('.movements_value'));
+  el => Number(el.textContent.replace('€', ''));
+
+  console.log(movementsUI);
+
+  const movementsUI2 = [...document.querySelectorAll('.movements_value')];
+});
